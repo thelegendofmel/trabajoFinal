@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+
+/* Variables */
+    :root{
+    /* Colors */
+        /* Neutrals */
+        --neutral200: #F6EFDD;
+        --neutral800: #714433;
+
+        /* Red */
+        --red: #ED6160;
+
+        /* Greens */
+        --green: #8EB44F;
+        --darkgreen: #304922;
+
+
+    /* Spacing */
+        --xs: 1rem; /* 16px */
+        --s: 2rem; /* 32px */
+        --m: 3rem; /* 48px */
+        --l: 4rem; /* 64px */
+        --xl: 5rem; /* 80px */
+        --padding-vertical: (var(--s));
+    }
+
+    /* Fuentes */
+        .tt-travels-next{
+            font-family: "tt-travels-next", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .tt-travels-next-bold{
+            font-family: "tt-travels-next", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .nunito{
+            font-family: "nunito", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .nunito-bold{
+            font-family: "nunito", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+    /* Text Styles */
+        .heading1{
+            font-family: "tt-travels-next", sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 125%;
+            text-transform: uppercase;
+        }
+
+        .heading2{
+            font-family: "tt-travels-next", sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 125%;
+            text-transform: uppercase;
+        }
+
+        .heading3{
+            font-family: "tt-travels-next", sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            line-height: 125%;
+            text-transform: uppercase;
+        }
+
+        .heading4{
+            font-family: "tt-travels-next", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 125%;
+            text-transform: uppercase;
+        }
+
+        .heading5{
+            font-family: "tt-travels-next", sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            line-height: 125%;
+            text-transform: uppercase;
+        }
+
+        .heading6{
+            font-family: "tt-travels-next", sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 125%;
+            text-transform: uppercase;
+        }
+
+        .subheading{
+            font-family: "nunito", sans-serif;
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 125%;
+        }
+
+        .label{
+            font-family: "tt-travels-next", sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 125%;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        .body{
+            font-family: "nunito", sans-serif;
+            font-size: 0.9375rem;
+            font-weight: 400;
+            line-height: 125%;
+        }
+
+        .body-bold{
+            font-family: "nunito", sans-serif;
+            font-size: 0.9375rem;
+            font-weight: 700;
+            line-height: 125%;
+        }
+
+
+
+    .container{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: var(--s);
+        padding-bottom: var(--s);
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: var(--xs);
+        padding-right: var(--xs);
+        gap: var(--s);
+    }
+
+    button{
+        width: 170px;
+        height: 48px;
+        border: transparent;
+        border-radius: 6px;
+        font-family: "nunito", sans-serif;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 125%;
+    }
+
+
+
+    /* Hero/Navbar */
+
+    header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+
+    .container-img{
+        background-image: url(imgs/herocoffee.jpg);
+        display: flex;
+        flex-direction: column;
+        padding-top: var(--s);
+        padding-bottom: var(--s);
+        gap: var(--l);  
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: var(--xs);
+        padding-right: var(--xs);
+        gap: var(--s);
+        color: var(--neutral200);
+    }
+
+    #hero-text{
+        display: flex;
+        flex-direction: column;
+        gap: var(--xs);
+    }
+
+
+    #hero-button{
+        background-color: var(--neutral200);
+        color: var(--neutral800);
+    }
+
+
+/* About */
+
+    #container-about{
+        background-color: var(--neutral200);
+        color: var(--neutral800);
+    }
+
+    #about-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: var(--xs);
+    }
+
+    #about-button{
+        background-color: var(--neutral800);
+        color: var(--neutral200);
+    }
+
+
+    /* Menu */
+
+    #container-menu{
+        background-color: var(--red);
+        color: var(--neutral200);
+    }
+
+    #menu-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: var(--xs);
+    }
+
+    #menu-button{
+        background-color: var(--neutral200);
+        color: var(--red);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .p-light{
+        font-family: "nunito", sans-serif;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        line-height: 125%;
+        color: var(--neutral200);
+    }
+
