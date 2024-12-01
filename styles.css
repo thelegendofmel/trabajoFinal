@@ -122,6 +122,7 @@
             line-height: 125%;
             letter-spacing: 5px;
             text-transform: uppercase;
+            
         }
 
         .body{
@@ -149,11 +150,20 @@
         padding-bottom: var(--s);
     }
 
-    .content{
+    .content-center{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-left: var(--xs);
+        padding-right: var(--xs);
+        gap: var(--s);
+    }
+
+    .content-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
         padding-left: var(--xs);
         padding-right: var(--xs);
         gap: var(--s);
@@ -174,7 +184,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: var(--s);
+        gap: var(--xs);
     }
 
     .imglink{
@@ -193,6 +203,10 @@
         color: var(--neutral200);
     }
 
+    .imglink img.resize {
+        width:540px; /* you can use % */
+        height: auto;
+    }
 
 
     /* Hero/Navbar */
@@ -238,6 +252,7 @@
     }
 
 
+
 /* About */
 
     #container-about{
@@ -267,18 +282,27 @@
         color: var(--neutral200);
     }
 
-    #menu-text{
+    #menu-label{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    #menu-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
         gap: var(--xs);
     }
 
     #menu-button{
         background-color: var(--neutral200);
         color: var(--red);
+        
     }
 
     #coffee{
@@ -291,6 +315,100 @@
 
 
 
+    /* Location */
+
+    #container-location{
+        background-color: var(--darkgreen);
+        color: var(--neutral200);
+    }
+
+    #location-label{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #location-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        gap: var(--xs);
+    }
+    
+    #medellin{
+        background-image: url(imgs/medellin.jpg);
+    }
+    
+    #envigado{
+        background-image: url(imgs/envigado.jpg);
+    }
+
+
+/* At Home */
+
+    #container-athome{
+        background-color: var(--neutral200);
+        color: var(--neutral800);
+    }
+
+    #athome-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: var(--xs);
+    }
+
+    #athome-button{
+        background-color: var(--neutral800);
+        color: var(--neutral200);
+    }
+
+    #athome-image{
+        width: 333px;
+        height: 238px;
+        border-radius: 6px;
+    }
+
+
+    /* Footer */
+
+    #container-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;    
+        gap: var(--xs);    
+        padding-top: var(--s);
+        padding-bottom: var(--s);
+        padding-left: var(--xs);
+        padding-right: var(--xs);
+        background-color: var(--green);
+        color: var(--neutral200);
+    }
+
+    .logo-content {
+        display: flex;
+        flex-direction: row;
+        gap: var(--xs);
+    }
+
+    #footer-button{
+        background-color: var(--neutral800);
+        color: var(--neutral200);
+    }
+
+    #footer-image{
+        width: 333px;
+        height: 238px;
+        border-radius: 6px;
+    }
 
 
 
